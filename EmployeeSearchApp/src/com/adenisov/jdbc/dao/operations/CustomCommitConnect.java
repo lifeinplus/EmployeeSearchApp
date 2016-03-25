@@ -7,15 +7,15 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 import com.adenisov.jdbc.dao.connect.Connect;
-import com.adenisov.jdbc.dao.querystock.QueryStock;
+import com.adenisov.jdbc.dao.querystock.EmployeeQueryStock;
 
 public class CustomCommitConnect extends Connect {
 
-	private QueryStock stock;
+	private EmployeeQueryStock stock;
 	
 	public CustomCommitConnect() throws ClassNotFoundException, IOException {
 		super();
-		stock = new QueryStock();
+		stock = new EmployeeQueryStock();
 	}
 
 	private void updateDepartmentSalaries(String department, double salary) throws SQLException {

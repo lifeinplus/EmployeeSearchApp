@@ -1,6 +1,6 @@
 package com.adenisov.jdbc.dao.querystock;
 
-public class QueryStock {
+public class EmployeeQueryStock {
 
 	/**
 	 * SELECT * FROM employees<br/>

@@ -11,18 +11,18 @@ import java.util.List;
 
 import com.adenisov.jdbc.dao.connect.Connect;
 import com.adenisov.jdbc.dao.parsers.ResultsParser;
-import com.adenisov.jdbc.dao.querystock.QueryStock;
+import com.adenisov.jdbc.dao.querystock.EmployeeQueryStock;
 import com.adenisov.jdbc.model.ColumnInfo;
 import com.adenisov.jdbc.model.DatabaseInfo;
 
 public class DatabaseInfoConnect extends Connect {
 
-	private QueryStock stock;
+	private EmployeeQueryStock stock;
 	private ResultsParser parser;
 	
 	public DatabaseInfoConnect() throws ClassNotFoundException, IOException {
 		super();
-		stock = new QueryStock();
+		stock = new EmployeeQueryStock();
 		parser = new ResultsParser();
 	}
 

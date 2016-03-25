@@ -12,16 +12,16 @@ import java.sql.SQLException;
 
 import com.adenisov.jdbc.dao.connect.Connect;
 import com.adenisov.jdbc.dao.parsers.ResultsParser;
-import com.adenisov.jdbc.dao.querystock.QueryStock;
+import com.adenisov.jdbc.dao.querystock.EmployeeQueryStock;
 
 public class LargeObjectConnect extends Connect {
 
-	private QueryStock stock;
+	private EmployeeQueryStock stock;
 	private ResultsParser parser;
 	
 	public LargeObjectConnect() throws ClassNotFoundException, IOException {
 		super();
-		stock = new QueryStock();
+		stock = new EmployeeQueryStock();
 		parser = new ResultsParser();
 	}
 

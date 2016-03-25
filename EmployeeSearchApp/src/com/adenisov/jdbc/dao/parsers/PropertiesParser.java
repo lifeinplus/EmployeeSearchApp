@@ -9,11 +9,11 @@ import com.adenisov.jdbc.model.Config;
 
 public class PropertiesParser {
 
+	private static final String PROPERTIES_FILE_PATH = "res\\config.properties";
 	private static final String URL = "url";
 	private static final String USER = "user";
 	private static final String PASSWORD = "password";
 	private static final String DRIVER = "driver";
-	private static final String PROPERTIES_FILE_PATH = "res\\config.properties";
 	
 	private Properties properties;
 	private Config config;
